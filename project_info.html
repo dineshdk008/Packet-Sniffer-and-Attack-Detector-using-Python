@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Information - Packet Sniffer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #333;
+        }
+        h1, h2, h3 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+            margin-top: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: #fff;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            color: #555;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Project Information - Packet Sniffer</h1>
+        
+        <h2>Project Overview</h2>
+        <p>This project is a network packet sniffer designed to monitor and analyze network traffic. It captures packets, extracts relevant information, and sends alerts for sensitive data such as passwords and emails.</p>
+        
+        <h2>Key Features</h2>
+        <ul>
+            <li>Network Interface Selection: Allows users to select the network adapter for packet sniffing.</li>
+            <li>Packet Capture: Utilizes Scapy to capture live network packets.</li>
+            <li>Data Extraction: Extracts sensitive information like passwords and email addresses from captured packets.</li>
+            <li>Email Alerts: Sends email notifications when sensitive data is detected.</li>
+            <li>Threading: Uses threading to handle packet sniffing and email sending concurrently.</li>
+        </ul>
+
+        <h2>File Descriptions</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>File Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>main_sniffer.py</strong></td>
+                    <td>Main application file that sets up the GUI, handles user input, and starts/stops packet sniffing.</td>
+                </tr>
+                <tr>
+                    <td><strong>sniffer_core.py</strong></td>
+                    <td>Core functionality for packet sniffing, including packet processing and data extraction.</td>
+                </tr>
+                <tr>
+                    <td><strong>notifier.py</strong></td>
+                    <td>Handles email notifications using SMTP when sensitive data is detected.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Usage Instructions</h2>
+        <ol>
+            <li>Install required libraries: Scapy, Tkinter (usually included with Python), and any other dependencies.</li>
+            <li>Run the main_sniffer.py script to launch the GUI.</li>
+            <li>Select the desired network adapter from the dropdown menu.</li>
+            <li>Enter a valid email address to receive alerts.</li>
+            <li>Click "Start Sniffing" to begin capturing packets. Click "Stop Sniffing" to
+</body>
+</html>
